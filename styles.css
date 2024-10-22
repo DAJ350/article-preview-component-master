@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  /* Colours */
+  --main-bg: #ecf2f8;
+  --card-bg: #fff;
+  --main-color: #48556a;
+  --alternate-color: #6e8098;
+  --accent-color: #9daec2;
+}
+
+/* Typography */
+
+.display {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.015625rem;
+  color: var(--main-color);
+}
+
+.title {
+  font-size: 0.8125rem;
+  font-family: "Manrope";
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0.0075rem;
+  color: var(--main-color);
+}
+
+.body {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.0075rem;
+  color: var(--alternate-color);
+}
+
+/* Body Layout */
+
+body {
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+}
+
+/* Card */
+
+.preview-card {
+  background-color: var(--card-bg);
+  position: relative;
+  width: 45.625rem;
+  display: flex;
+  height: 17.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2.5rem 2.5rem -0.625rem hsla(210, 27.3%, 83.5%, 0.5);
+}
+
+.preview-card__image {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+  object-position: left;
+  height: auto;
+  width: 39.04109589041096%;
+}
+
+.preview-card__text-container {
+  padding: 2rem 2.5rem;
+}
+
+.preview-card__body-text {
+  padding: 0.75rem 0 1.25rem;
+}
+
+.preview-card__author-info-container {
+    display: flex;
+    width: 100%;
+}
+
+.preview-card__author-avatar {
+    width: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.preview-card__author-text-container {
+    margin: 0 44.10958904109589% 0 1rem;
+}
+
+.preview-card__publication-date {
+    color: var(--accent-color);
+}
+
+/* Popup */
+
+.preview-card__popup-buttons-container {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    width: 15.5rem;
+    height: 4.1875rem;
+    top: 8.075rem;
+    left: 34.375rem;
+}
+
+.preview-card__popup-buttons-bg-shape {
+    position: absolute;
+    width: 100%;
+}
+
+.preview-card__icons-collection {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    top: 1rem;
+    column-gap: 1rem;
+    list-style-type: none;
+    z-index: 1;
+}
+
+.preview-card__popup-cta {
+    align-self: flex-start;
+    text-transform: uppercase;
+    letter-spacing: 0.3125rem;
+    line-height: 1.25rem;
+    color: var(--accent-color);
+}
