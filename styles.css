@@ -101,12 +101,19 @@ body {
     color: var(--accent-color);
 }
 
+.preview-card__share-button {
+    transition: all 0.5s ease 0s;
+}
+
+.preview-card__share-button:hover {
+    cursor: pointer;
+}
+
 /* Popup */
 
 .preview-card__popup-buttons-container {
     display: none;
     position: absolute;
-    justify-content: center;
     width: 15.5rem;
     height: 4.1875rem;
     top: 8.075rem;
